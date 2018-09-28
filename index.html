@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tainan T-Bike 站點查詢</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/bike2.png" />
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .card {
+
+            -webkit-box-shadow: 10px 10px 5px -5px rgba(240, 232, 240, 1);
+            -moz-box-shadow: 10px 10px 5px -5px rgba(240, 232, 240, 1);
+            box-shadow: 10px 10px 5px -5px rgba(240, 232, 240, 1);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+
+        <a class="navbar-brand ml-5" href="#">
+            <img src="img/bike.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Tainan T-Bike 站點查詢
+        </a>
+    </nav>
+
+    <div class="container mt-5">
+
+
+        <div class="row">
+            <!-- side-bar -->
+            <div class="col-md-3">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">站點搜尋</h4>
+                        <!-- <div class="searchBar col-half">
+                            <div class="search-box mr--m">
+                                <input class="" type="search" name="keyword" title="請輸入站點關鍵字" placeholder="">
+                                <button class="search-submit" type="submit" aria-label="搜尋">
+                                    <i class="fa fa-search" aria-hidden="true"></i> 
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div> -->
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="搜尋..." aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">搜尋</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">選擇行政區</h4>
+                        <div class="form-group">
+                            <select class="form-control" id="exampleFormControlSelect2">
+                                <option value="">所有地區</option>
+                                <option value="2">仁德區</option>
+                                <option value="7">南科</option>
+                                <option value="50">北區</option>
+                                <option value="51">中西區</option>
+                                <option value="52">南區</option>
+                                <option value="53">安平區</option>
+                                <option value="54">東區</option>
+                                <option value="55">安南區</option>
+                                <option value="56">歸仁區</option>
+                                <option value="85">永康區</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">站點地圖</h4>
+                        <a href="map.html">Map</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- station-panel -->
+            <div class="col-md-9 grid-margin" id="station-panel">
+                <!-- <div class="content-wrapper"> -->
+                <!-- <div class="card mt-5">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="display-4 mb-3"><i class="fas fa-bicycle"> 十鼓文化村站</i></h1>
+                                <p class="card-text"><i class="far fa-clock"> 仁德區</i></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"> 十鼓文化村門口前方(公車候車亭旁)</i></p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <p class="card-text">
+                                        <h3 class="text-muted">10</h3>
+                                        <h5>可借車輛</h5>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <p class="card-text text-center">
+                                        <h3 class="text-muted">22</h3>
+                                        <h5>可停車位</h5>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- </div> -->
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="request.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
