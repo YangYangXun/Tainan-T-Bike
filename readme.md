@@ -25,6 +25,17 @@
 
 ## 使用說明
 
+* 主頁面
+
+![](https://raw.githubusercontent.com/YangYangXun/ProjectImage/master/T-Bike/home.png)
+
+* 行政區搜尋
+
+![](https://raw.githubusercontent.com/YangYangXun/ProjectImage/master/T-Bike/district.png)
+
+* 站點關鍵字搜尋
+
+![](https://raw.githubusercontent.com/YangYangXun/ProjectImage/master/T-Bike/search.png)
 
 
 
@@ -33,6 +44,4 @@
 [台南市政府資料資料開放平台](http://data.tainan.gov.tw/)
 
 [T-Bike 臺南市公共自行車租賃站資訊 (JSON)](http://data.tainan.gov.tw/dataset/t-bike/resource/7030d030-1011-42f3-a1dc-9aab00b96f53)
-
-
 
