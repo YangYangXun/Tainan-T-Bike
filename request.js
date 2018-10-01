@@ -1,32 +1,30 @@
 
 
+var allStationData = []; // 存放固定站點全部資料
+var stationData = []; // 存放動態站點資料 
 
 const xhr = new XMLHttpRequest()
 
 xhr.open('GET', 'data/t-bike.json', true)
 xhr.send()
 
-console.log('hola')
 xhr.onload = function () {
 
     if (xhr.readyState == 4 && xhr.status == 200) {
         const data = JSON.parse(xhr.responseText)
-        createStationCard(data)
+        allStationData = data;
+        stationData = data;
 
+        console.log('--------initial --------')
 
-        /* 返回資料結果集 */
-        // const AsiaData = data.filter((mydata) => {
-        //     return mydata.region == 'Asia'
-        // })
-        // console.log(AsiaData)
+        // 預設載入全部資料
+        createStationCard(stationData)
 
-        /* 返回第一筆資料 */
-        // const AsiaFirstData = data.find((mydata) => {
-        //     return mydata.region == 'Asia'
-        // })
-        // console.log(AsiaFirstData)
+        // 監聽行政區下拉選單
+        listenSelect()
 
-        // console.log(data[0].region)
+        // 監聽搜尋框
+        listenSearch()
 
 
     } else {
@@ -67,4 +65,45 @@ function createStationCard(stationData) {
         newCard += '</div>' // card mt-5
     }
     document.getElementById('station-panel').innerHTML = newCard;
+}
+
+
+/**
+ * 監聽行政區選擇框
+ */
+function listenSelect() {
+    var location = document.getElementById('location');
+    location.addEventListener('change', (e) => {
+        console.log(e.target.value)
+        if (e.target.value == "all") {
+            stationData = allStationData
+            createStationCard(stationData)
+
+        } else {
+            const localStationData = allStationData.filter((station) => {
+                return e.target.value == station.District
+            })
+            stationData = localStationData
+            createStationCard(stationData)
+        }
+
+    })
+}
+
+/**
+ * 監聽搜尋框
+ */
+
+function listenSearch() {
+    var searchBar = document.getElementById('search-bar');
+    searchBar.addEventListener('input', (e) => {
+
+        console.log(stationData)
+        var searchText = e.target.value
+        let filterStations = stationData.filter(function (data) {
+            return data.StationName.includes(searchText)
+        })
+        createStationCard(filterStations)
+    })
+
 }

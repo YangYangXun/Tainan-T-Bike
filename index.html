@@ -46,17 +46,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">站點搜尋</h4>
-                        <!-- <div class="searchBar col-half">
-                            <div class="search-box mr--m">
-                                <input class="" type="search" name="keyword" title="請輸入站點關鍵字" placeholder="">
-                                <button class="search-submit" type="submit" aria-label="搜尋">
-                                    <i class="fa fa-search" aria-hidden="true"></i> 
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                        </div> -->
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="搜尋..." aria-label="Recipient's username"
+                            <input id="search-bar" type="text" class="form-control" placeholder="搜尋..." aria-label="Recipient's username"
                                 aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="button">搜尋</button>
@@ -67,18 +58,18 @@
                     <div class="card-body">
                         <h4 class="card-title">選擇行政區</h4>
                         <div class="form-group">
-                            <select class="form-control" id="exampleFormControlSelect2">
-                                <option value="">所有地區</option>
-                                <option value="2">仁德區</option>
-                                <option value="7">南科</option>
-                                <option value="50">北區</option>
-                                <option value="51">中西區</option>
-                                <option value="52">南區</option>
-                                <option value="53">安平區</option>
-                                <option value="54">東區</option>
-                                <option value="55">安南區</option>
-                                <option value="56">歸仁區</option>
-                                <option value="85">永康區</option>
+                            <select class="form-control" id="location">
+                                <option value="all">所有地區</option>
+                                <option value="仁德區">仁德區</option>
+                                <option value="南科">南科</option>
+                                <option value="北區">北區</option>
+                                <option value="中西區">中西區</option>
+                                <option value="南區">南區</option>
+                                <option value="安平區">安平區</option>
+                                <option value="東區">東區</option>
+                                <option value="安南區">安南區</option>
+                                <option value="歸仁區">歸仁區</option>
+                                <option value="永康區">永康區</option>
                             </select>
                         </div>
                     </div>
