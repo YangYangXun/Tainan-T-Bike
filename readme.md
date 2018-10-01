@@ -27,21 +27,12 @@
 
 
 
+
 ## 參考資料
 
 [台南市政府資料資料開放平台](http://data.tainan.gov.tw/)
 
 [T-Bike 臺南市公共自行車租賃站資訊 (JSON)](http://data.tainan.gov.tw/dataset/t-bike/resource/7030d030-1011-42f3-a1dc-9aab00b96f53)
 
-**T-Bike API Json 資料參數內容**
 
-* Id(編號)
-* StationName(站名)
-* Address(地址)
-* Capacity(格位數)
-* AvaliableBikeCount(可借車輛數)
-* AvaliableSpaceCount(可停空位數)
-* UpdateTime(更新時間)
-* Latitude(緯度)
-* Longitude(經度)
-* District(行政區)
+
