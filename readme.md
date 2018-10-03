@@ -1,48 +1,48 @@
 # Tainan T-Bike API Filter
 
 
-## ºô¯¸Â²¤¶
+## ç¶²ç«™ç°¡ä»‹
 
-¤@­Ó¦nªºªA°Èm·|¦³­Ó±j¤jªº¿z¿ï¥\¯à¡A¤è«K«È¤á¿z¿ï·j´M¥X·Q­nªº¸ê®Æ¡AÁ|¤Z®ÈÀ]¡B¬¡°Ê¡B¹q°Ó¡B½u¤W½Òµ{¬Ò¯àÆ[¬İ¨ì¨äÀ³¥Î¡C
+ä¸€å€‹å¥½çš„æœå‹™éƒ½æœƒæœ‰å€‹å¼·å¤§çš„ç¯©é¸åŠŸèƒ½ï¼Œæ–¹ä¾¿å®¢æˆ¶ç¯©é¸æœå°‹å‡ºæƒ³è¦çš„è³‡æ–™ï¼Œèˆ‰å‡¡æ—…é¤¨ã€æ´»å‹•ã€é›»å•†ã€ç·šä¸Šèª²ç¨‹çš†èƒ½è§€çœ‹åˆ°å…¶æ‡‰ç”¨ã€‚
 
-¦¹¿z¿ï¾¹¥DÃD¬O Tainan T-Bike ªº¯¸ÂI¬d§ä¡A¹B¥Î¬F©²¸ê®Æ¸ê®Æ¶}©ñ¥­¥x¡A«Ø¥ßÂ²³æªº¯¸ÂI¬d§äªA°È¡C
+æ­¤ç¯©é¸å™¨ä¸»é¡Œæ˜¯ Tainan T-Bike çš„ç«™é»æŸ¥æ‰¾ï¼Œé‹ç”¨æ”¿åºœè³‡æ–™è³‡æ–™é–‹æ”¾å¹³å°ï¼Œå»ºç«‹ç°¡å–®çš„ç«™é»æŸ¥æ‰¾æœå‹™ã€‚
 
-[ºô¯¸Demo](https://yangyangxun.github.io/Tainan-T-Bike/)
+[ç¶²ç«™Demo](https://yangyangxun.github.io/Tainan-T-Bike/)
 
-## ¹B¥Î§Ş³N
+## é‹ç”¨æŠ€è¡“
 
 1. Javascript 
 2. AJAX
-3. JSON ¸ê®Æ¸ÑªR
+3. JSON è³‡æ–™è§£æ
 4. Bootstrap
 5. HTML/CSS
 
-## ¥D­n¥\¯à
+## ä¸»è¦åŠŸèƒ½
 
-* §¹¾ã¯¸ÂI¸ê°TÅã¥Ü
-* ¦æ¬F°Ï·j´M
-* ¯¸¦W·j´M
+* å®Œæ•´ç«™é»è³‡è¨Šé¡¯ç¤º
+* è¡Œæ”¿å€æœå°‹
+* ç«™åæœå°‹
 
 
-## ¨Ï¥Î»¡©ú
+## ä½¿ç”¨èªªæ˜
 
-* ¥D­¶­±
+* ä¸»é é¢
 
 ![](https://raw.githubusercontent.com/YangYangXun/ProjectImage/master/T-Bike/home.png)
 
-* ¦æ¬F°Ï·j´M
+* è¡Œæ”¿å€æœå°‹
 
 ![](https://raw.githubusercontent.com/YangYangXun/ProjectImage/master/T-Bike/district.png)
 
-* ¯¸ÂIÃöÁä¦r·j´M
+* ç«™é»é—œéµå­—æœå°‹
 
 ![](https://raw.githubusercontent.com/YangYangXun/ProjectImage/master/T-Bike/search.png)
 
 
 
-## °Ñ¦Ò¸ê®Æ
+## åƒè€ƒè³‡æ–™
 
-[¥x«n¥«¬F©²¸ê®Æ¸ê®Æ¶}©ñ¥­¥x](http://data.tainan.gov.tw/)
+[å°å—å¸‚æ”¿åºœè³‡æ–™è³‡æ–™é–‹æ”¾å¹³å°](http://data.tainan.gov.tw/)
 
-[T-Bike »O«n¥«¤½¦@¦Û¦æ¨®¯²¸î¯¸¸ê°T (JSON)](http://data.tainan.gov.tw/dataset/t-bike/resource/7030d030-1011-42f3-a1dc-9aab00b96f53)
+[T-Bike è‡ºå—å¸‚å…¬å…±è‡ªè¡Œè»Šç§Ÿè³ƒç«™è³‡è¨Š (JSON)](http://data.tainan.gov.tw/dataset/t-bike/resource/7030d030-1011-42f3-a1dc-9aab00b96f53)
 
