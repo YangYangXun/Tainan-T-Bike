@@ -1,7 +1,6 @@
 
-
-var allStationData = []; // 存放固定站點全部資料
-var stationData = []; // 存放動態站點資料 
+var allStationData = [] // 存放固定站點全部資料
+var stationData = [] // 存放動態站點資料 
 
 const xhr = new XMLHttpRequest()
 
@@ -12,8 +11,8 @@ xhr.onload = function () {
 
     if (xhr.readyState == 4 && xhr.status == 200) {
         const data = JSON.parse(xhr.responseText)
-        allStationData = data;
-        stationData = data;
+        allStationData = data
+        stationData = data
 
         console.log('--------initial --------')
 
@@ -28,7 +27,7 @@ xhr.onload = function () {
 
 
     } else {
-        alert("發生錯誤" + xhr.status);
+        alert("發生錯誤" + xhr.status)
     }
 
 }
@@ -64,7 +63,7 @@ function createStationCard(stationData) {
         newCard += '</div>' // card-body
         newCard += '</div>' // card mt-5
     }
-    document.getElementById('station-panel').innerHTML = newCard;
+    document.getElementById('station-panel').innerHTML = newCard
 }
 
 
@@ -72,7 +71,7 @@ function createStationCard(stationData) {
  * 監聽行政區選擇框
  */
 function listenSelect() {
-    var location = document.getElementById('location');
+    var location = document.getElementById('location')
     location.addEventListener('change', (e) => {
         console.log(e.target.value)
         if (e.target.value == "all") {
@@ -95,7 +94,7 @@ function listenSelect() {
  */
 
 function listenSearch() {
-    var searchBar = document.getElementById('search-bar');
+    var searchBar = document.getElementById('search-bar')
     searchBar.addEventListener('input', (e) => {
 
         console.log(stationData)
