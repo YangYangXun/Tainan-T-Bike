@@ -11,7 +11,7 @@
 
 ## 運用技術
 
-1. Javascript 
+1. JavaScript 
 2. AJAX
 3. JSON 資料解析
 4. Bootstrap
@@ -45,4 +45,3 @@
 [台南市政府資料資料開放平台](http://data.tainan.gov.tw/)
 
 [T-Bike 臺南市公共自行車租賃站資訊 (JSON)](http://data.tainan.gov.tw/dataset/t-bike/resource/7030d030-1011-42f3-a1dc-9aab00b96f53)
-
